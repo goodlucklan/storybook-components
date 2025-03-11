@@ -5,7 +5,7 @@
     "target": "ES5",
     "declaration": true,
     "declarationDir": "dist/types",
-    "jsx": "react-jsx",
+    "jsx": "react-jsx", 
     "strict": true,
     "moduleResolution": "node",
     "esModuleInterop": true,

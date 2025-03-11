@@ -21,7 +21,7 @@ export default {
     peerDepsExternal(),
     resolve(),
     commonjs(),
-    typescript({ tsconfig: "./tsconfig.json" }), // Asegúrate de que apunte a tu tsconfig.json
+    typescript({ tsconfig: "./tsconfig.json" }), // Verifica que tsconfig.json esté bien configurado
   ],
-  external: ["react", "react-dom", "styled-components"], // Evita empaquetar estos
+  external: ["react", "react-dom", "styled-components"], // Excluye estos paquetes del bundle
 };
