@@ -18,11 +18,6 @@ export default {
       sourcemap: true,
     },
   ],
-  plugins: [
-    peerDepsExternal(),
-    resolve({ extensions: [".js", ".jsx", ".ts", ".tsx"] }),
-    commonjs(),
-    typescript({ tsconfig: "./tsconfig.json", include: ["src/**/*"] }),
-  ],
-  external: ["react", "react-dom", "styled-components"],
+  plugins: [peerDepsExternal(), resolve(), commonjs(), typescript()],
+  external: ["react", "react-dom"],
 };
