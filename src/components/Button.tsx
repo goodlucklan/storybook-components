@@ -30,10 +30,12 @@ export const WrapperDialogButtonA = styled.button`
   }
 `;
 
-export const Button: React.FC<ButtonProps> = ({ children, onClick }) => {
+const Button: React.FC<ButtonProps> = ({ children, onClick }) => {
   return (
     <WrapperDialogButtonA data-testid="button-component" onClick={onClick}>
       {children}
     </WrapperDialogButtonA>
   );
 };
+
+export default Button;
